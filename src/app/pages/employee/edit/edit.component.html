@@ -1,0 +1,30 @@
+<h3>{{ header }}</h3>
+
+<form (submit)="addNewData()" class="formNewMember" [formGroup]="crudForm">
+  <mat-form-field class="example-full-width">
+    <mat-label>Id</mat-label>
+    <input matInput placeholder="1" name="id" formControlName="id" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="John Doe" name="name" formControlName="name" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Email</mat-label>
+    <input
+      matInput
+      placeholder="John@email.com"
+      name="email"
+      formControlName="email"
+    />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>phone</mat-label>
+    <input matInput placeholder="123321" name="phone" formControlName="phone" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Job</mat-label>
+    <input matInput placeholder="Musician" name="job" formControlName="job" />
+  </mat-form-field>
+  <button type="submit" mat-flat-button color="primary">Save</button>
+</form>
